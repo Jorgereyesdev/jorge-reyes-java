@@ -4,27 +4,16 @@ import java.util.Scanner;
 
 public class UnitConverter {
     public static void main(String[] args) {
+        final double KILOMETERS_PER_MILE = 1.60934;
+
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter your weight in kilograms: ");
-        double weight = scanner.nextDouble();
+        System.out.print("Enter the distance in kilometers: ");
+        double kilometers = scanner.nextDouble();
 
-        System.out.println("Enter your height in meters: ");
-        double height = scanner.nextDouble();
+        double miles = kilometers / KILOMETERS_PER_MILE;
 
-        double imc = weight / (height * height);
-
-        System.out.println("Your IMC is: + " + imc);
-
-        if (imc > 18.5) {
-            System.out.println("You are underweight");
-        } else if (imc >= 18.5 && imc < 24.9) {
-            System.out.println("You are in the normal range");
-        } else if (imc >= 25 && imc < 29.9) {
-            System.out.println("You are overweight");
-        } else {
-            System.out.println("You have obesity");
-        }
+        System.out.println(kilometers + " kilometers is equivalent to " + miles + " miles.");
 
         scanner.close();
     }
