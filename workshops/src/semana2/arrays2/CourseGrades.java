@@ -9,10 +9,9 @@ public class CourseGrades {
         final int TOTAL_NOTAS = 8;
         final double PROMEDIO_MINIMO = 76.0;
 
-        System.out.print("Ingrese la cantidad de calificaciones ya obtenidas (de 0 a 7): ");
+        System.out.print("Ingrese la cantidad de calificaciones (de 0 a 7): ");
         int cantidadNotasObtenidas = scanner.nextInt();
 
-        // Validar la entrada
         if (cantidadNotasObtenidas < 0 || cantidadNotasObtenidas >= TOTAL_NOTAS) {
             System.out.println("Cantidad de calificaciones inválida. Debe estar entre 0 y 7.");
             scanner.close();
