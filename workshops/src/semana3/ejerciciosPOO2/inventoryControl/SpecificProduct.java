@@ -11,4 +11,30 @@ public class SpecificProduct extends Product {
         this.brand = brand;
     }
 
+    @Override
+    public String toString() {
+        return "SpecificProduct{" +
+                "id=" + getId() +
+                ", name='" + getName() + '\'' +
+                ", price=" + getPrice() +
+                ", category='" + category + '\'' +
+                ", brand='" + brand + '\'' +
+                '}';
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
 }
