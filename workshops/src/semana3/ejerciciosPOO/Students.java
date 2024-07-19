@@ -4,6 +4,7 @@ package semana3.ejerciciosPOO;
 import java.util.ArrayList;
 
 public class Students {
+    String holi = "holi";
     private String name;
     private ArrayList <Float> grades = new ArrayList<Float>();
 
